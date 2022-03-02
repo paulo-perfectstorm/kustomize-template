@@ -5,8 +5,4 @@ bases:
 - ../../base
 
 patches:
-  - target:
-      version: apps/v1
-      kind: Deployment
-      name: app
-    path: deployment.yaml
+- path: deployment.yaml
