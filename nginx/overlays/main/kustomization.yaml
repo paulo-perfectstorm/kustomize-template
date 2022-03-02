@@ -8,6 +8,6 @@ resources:
   - namespace.yaml
   - storage.yaml 
 
-patches:
+patchesStrategicMerge:
   - deployment.yaml
   - service.yaml

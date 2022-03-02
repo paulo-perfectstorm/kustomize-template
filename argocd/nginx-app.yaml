@@ -9,6 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
+    directory:
+      recurse: true
     path: nginx/overlays/main
     repoURL: https://github.com/paulo-perfectstorm/kustomize-template  
 ---
@@ -23,6 +25,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
+    directory:
+      recurse: true
     path: nginx/overlays/test
     repoURL: https://github.com/paulo-perfectstorm/kustomize-template
   syncPolicy:
@@ -54,6 +58,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
+    directory:
+      recurse: true
     path: nginx/overlays/user
     repoURL: https://github.com/paulo-perfectstorm/kustomize-template
   syncPolicy:
