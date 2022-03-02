@@ -4,5 +4,5 @@ kind: Kustomization
 bases:
 - ../../base
 
-patches:
-- path: deployment.yaml
+patchesStrategicMerge:
+- deployment.yaml
