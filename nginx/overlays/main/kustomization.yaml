@@ -7,6 +7,6 @@ bases:
 resources:
   - storage.yaml 
 
-patchesStrategicMerge:
-  - deployment.yaml
-  - service.yaml
+patches:
+- path: deployment.yaml
+- path: service.yaml
