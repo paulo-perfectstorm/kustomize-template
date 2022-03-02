@@ -7,6 +7,14 @@ bases:
 resources:
   - storage.yaml 
 
-patchesStrategicMerge:
-- deployment.yaml
-- service.yaml
+patches:
+  - target:
+      version: apps/v1
+      kind: Deployment
+      name: app
+    path: deployment.yaml
+  - target:
+      version: v1
+      kind: Service
+      name: service
+    path: service.yaml
