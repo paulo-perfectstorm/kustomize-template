@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
-namespace: main
 metadata:
   name: service
+  namespace: main
 spec:
   type: NodePort

@@ -4,8 +4,5 @@ kind: Kustomization
 bases:
 - ../../base
 
-resources:
-  - namespace.yaml
-
 patchesStrategicMerge:
   - deployment.yaml

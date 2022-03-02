@@ -6,7 +6,6 @@ bases:
 
 resources:
   - storage.yaml
-  - namespace.yaml
 
 patchesStrategicMerge:
   - deployment.yaml
