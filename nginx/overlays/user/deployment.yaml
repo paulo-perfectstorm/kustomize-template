@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
       - image: nginx
-        name: nginx-user
+        name: nginx
