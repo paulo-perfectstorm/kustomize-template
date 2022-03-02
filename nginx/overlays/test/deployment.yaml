@@ -8,5 +8,5 @@ spec:
   template:
     spec:
       containers:
-      - image: nginx:stable
+      - image: nginx
         name: nginx-test
