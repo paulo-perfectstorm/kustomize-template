@@ -1,0 +1,42 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app-main
+  namespace: argocd
+spec:
+  destination:
+    namespace: main
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: nginx/overlays/main
+    repoURL: https://github.com/paulo-perfectstorm/kustomize-template
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app-test
+  namespace: argocd
+spec:
+  destination:
+    namespace: test
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: nginx/overlays/test
+    repoURL: https://github.com/paulo-perfectstorm/kustomize-template
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app-user
+  namespace: argocd
+spec:
+  destination:
+    namespace: user
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: nginx/overlays/user
+    repoURL: https://github.com/paulo-perfectstorm/kustomize-template
+  

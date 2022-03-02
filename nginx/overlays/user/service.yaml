@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+namespace: main
+metadata:
+  name: service
+  namespace: user
+spec:
+  type: NodePort
+  ports:
+    - name: http
+      nodePort: 32333
+      port: 80
+      protocol: TCP
+      targetPort: 80
