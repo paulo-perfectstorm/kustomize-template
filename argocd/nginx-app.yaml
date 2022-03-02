@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     directory:
-      recurse: true
+      recurse: false
     path: nginx/overlays/main
     repoURL: https://github.com/paulo-perfectstorm/kustomize-template  
 ---
