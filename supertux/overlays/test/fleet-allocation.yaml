@@ -1,0 +1,8 @@
+apiVersion: "allocation.agones.dev/v1"
+kind: GameServerAllocation
+metadata:
+  name: gameserver-allocation
+spec:
+  required:
+    matchLabels:
+      agones.dev/fleet: supertuxkart
