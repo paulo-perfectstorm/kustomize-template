@@ -5,7 +5,8 @@ resources:
   - main-namespace.yaml
   - user-namespace.yaml
   - test-namespace.yaml
-  - nginx-app.yaml
+  - https://raw.githubusercontent.com/googleforgames/agones/release-1.21.0/install/yaml/install.yaml
+  - supertux-gameserver.yaml
 
 patches:
   - target:

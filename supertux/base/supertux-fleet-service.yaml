@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: supertux-fleet-service
+spec:
+  type: LoadBalancer
+  selector:
+    agones.dev/gameserver: supertuxkart
+  ports:
+  - protocol: UDP
+    port: 7000 
+    targetPort: 8080
