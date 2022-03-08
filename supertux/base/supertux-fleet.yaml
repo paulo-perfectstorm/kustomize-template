@@ -15,12 +15,15 @@
 apiVersion: "agones.dev/v1"
 kind: Fleet
 metadata:
-  name: supertuxkart
+  name: supertuxkart  
 spec:
   replicas: 2
   strategy:
     type: Recreate
   template:
+    metadata:
+      labels:
+        gameserver: supertux
     spec:
       ports:
       - name: default

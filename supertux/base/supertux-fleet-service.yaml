@@ -5,7 +5,8 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    agones.dev/gameserver: supertuxkart
+    agones.dev/fleet: supertuxkart
+    gameserver: supertux
   ports:
   - protocol: UDP
     port: 7000 

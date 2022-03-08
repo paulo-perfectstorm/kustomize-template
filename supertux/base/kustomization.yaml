@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:  
   - supertux-fleet.yaml
+  - supertux-fleet-service.yaml
