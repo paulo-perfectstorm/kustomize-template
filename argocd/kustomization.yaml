@@ -8,6 +8,7 @@ resources:
   - agones-namespace.yaml
   - agones-cluster.yaml
   - supertux-gameserver.yaml
+  - xonotic-gameserver.yaml
 
 patches:
   - target:
